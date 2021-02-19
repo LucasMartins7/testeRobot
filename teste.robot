@@ -1,14 +1,7 @@
 *** Settings ***
 Documentation  This is some basic info about the whole suite
 Library  SeleniumLibrary
-Library  ./resources/api.py
-
-# Copy/paste the line below into Terminal to execute:
-# robot -d results tests/amazon.robot
-
-
-#Test Setup  Start
-#Test Teardown  Finish
+Library  api.py
 
 *** Variables ***
 ${checkTag}  \#9V2Y
@@ -16,8 +9,6 @@ ${clanName}  the resistance
 ${pathFile}  ./output/members.csv
 ${country}  Brazil
 ${keyName}  Chavinha
-
-
 
 *** Test Cases ***
 Loga na conta e cria uma chave
